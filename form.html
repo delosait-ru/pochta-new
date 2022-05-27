@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>New site</title>
+    <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="logo_wrp">
+                    <div class="logo-top">
+                        <div class="logo-top__img">
+                            <img src="./img/logo.svg" alt="alt">
+                        </div>
+                        <div class="logo-top__title">
+                            Общество с ограниченной "АТЛАНТ"
+                        </div>
+                    </div>
+                    <a href="#" class="header-btn">
+                        Интернет-банк
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-8">
+                <div class="product-form">
+                    <form action="#">
+                        <div class="input_title">Ваш заказ</div>
+
+                        <div class="input-wrp">
+                            <input class="calc-input" type="text" placeholder="Марка товара">
+
+
+                            <span class="rouble">45 000 ₽</span>
+                        </div>
+                        <div class="input_title">Калькулятор кредита</div>
+                        <div class="input-wrp">
+
+                            <input class="calc-input input-slide" type="text" value="6 мес.">
+                            <span class="credit-term">Срок кредита</span>
+                            <div id="slider-range-max"></div>
+                            <div class="pips">
+                                <div class="pip pip1">6 мес.</div>
+                                <div class="pip pip2">12 мес.</div>
+                                <div class="pip pip3">18 мес.</div>
+                                <div class="pip pip4">24 мес.</div>
+                                <div class="pip pip5">30 мес.</div>
+                                <div class="pip pip6">36 мес.</div>
+                            </div>
+                        </div>
+                        <div class="input-wrp input-wrp--slider">
+                            <input class="calc-input input-slide b-radius-none" type="text" value="10 %" readonly="true">
+                            <span class="credit-term">Первоначальный взнос</span>
+
+                        </div>
+                        <div class="input_title">Контактная информация</div>
+                        <div class="input-wrp">
+                            <input class="calc-input" type="text" placeholder="Фамилия">
+
+                        </div>
+                        <div class="input-wrp">
+                            <input class="calc-input" type="text" placeholder="Имя">
+
+                        </div>
+                        <div class="input-wrp">
+                            <input class="calc-input" type="text" placeholder="Отчество">
+
+                        </div>
+                        <div class="input-wrp">
+                            <input class="calc-input" type="text" placeholder="Мобильный телефон">
+
+                        </div>
+
+                        <div class="input_title">Данные заказа</div>
+                        <div class="input-wrp">
+
+                            <div class="input-wrp">
+                                <input class="calc-input" type="text" placeholder="Номер заказа">
+
+                            </div>
+                            <div class="input-wrp">
+                                <input class="calc-input" type="text" placeholder="Модель заказа">
+
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="cresults">
+                    <div class="cresults__result">
+                        <div class="cresults__labels">
+                            <div class="cresults__label--title">
+                                Сумма ежемесячного платежа
+                            </div>
+                            <div class="cresults__label--summ">
+                                2218 ₽
+                            </div>
+                        </div>
+                        <div class="cresults__progress">
+                            <span class="cresults__progress--gray"></span>
+                            <span class="cresults__progress--red" style="width: 33%"></span>
+                        </div>
+                    </div>
+                    <div class="cresults__result">
+                        <div class="cresults__labels">
+                            <div class="cresults__label--title">
+                                Сумма кредита
+                            </div>
+                            <div class="cresults__label--summ">
+                                45000 ₽
+                            </div>
+                        </div>
+                        <div class="cresults__progress">
+                            <span class="cresults__progress--gray"></span>
+                            <span class="cresults__progress--red" style="width: 33%"></span>
+                        </div>
+                    </div>
+                    <div class="cresults__result">
+                        <div class="cresults__labels">
+                            <div class="cresults__label--title">
+                                Первоначальный взнос
+                            </div>
+                            <div class="cresults__label--summ">
+                                4000 ₽
+                            </div>
+                        </div>
+                        <div class="cresults__progress">
+                            <span class="cresults__progress--gray"></span>
+                            <span class="cresults__progress--red" style="width: 33%"></span>
+                        </div>
+                    </div>
+                    <div class="cresults__agreement">
+                        <div class="cresults__checkbox">
+                            <label class="custom-checkbox">
+                                <input class="checkbox-hidden" type="checkbox" name="Да">
+                                <span class="checkbox-wrap"></span>
+                                <span class="checkbox-text">Принимаю условия соглашения, даю согласие на обработку персональных данных и отправку запроса в БКИ</span>
+                            </label>
+                        </div>
+                        <a href="#" class="cresults__link">
+                            Тарифы и условия
+                        </a>
+                    </div>
+                    <a href="#" class="cresults__btn">Заполнить анкету</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+</html>
