@@ -29,7 +29,7 @@
                             <img src="./img/logo.svg" alt="alt">
                         </div>
                         <div class="logo-top__title">
-                            Общество с ограниченной "АТЛАНТ"
+                            "Название"
                         </div>
                     </div>
                     <a href="#" class="header-btn">
@@ -40,6 +40,8 @@
         </div>
     </div>
 </div>
+
+
 <div class="section">
     <div class="container">
         <div class="row">
@@ -50,13 +52,17 @@
 
                         <div class="input-wrp">
                             <span class="input-product-title">Комплект товаров CSPROF №28956</span>
-                            <input class="calc-input" type="text" placeholder="45 000 ₽ ">
-
+                            <input class="calc-input input-err" type="text" placeholder="0">
+                            <div class="err-msg">Укажите сумму! </div>
+                            <svg class="ic_err ic_err-top48">
+                                <use xlink:href="img/sprite.svg#err"></use>
+                            </svg>
+                            <span class="rouble"></span>
                         </div>
                         <div class="input_title">Калькулятор кредита</div>
                         <div class="input-wrp">
 
-                            <input class="calc-input input-slide" type="text" value="6 мес.">
+                            <input class="calc-input input-slide input-err" type="text" value="6 мес.">
                             <span class="credit-term">Срок кредита</span>
                             <div id="slider-range-max"></div>
                             <div class="pips">
@@ -67,40 +73,72 @@
                                 <div class="pip pip5">30 мес.</div>
                                 <div class="pip pip6">36 мес.</div>
                             </div>
+                            <div class="err-msg">Превышен допустимый срок кредитования! </div>
+                            <svg class="ic_err">
+                                <use xlink:href="img/sprite.svg#err"></use>
+                            </svg>
                         </div>
                         <div class="input-wrp input-wrp--slider">
-                            <input class="calc-input input-slide b-radius-none" type="text" value="10 %" readonly="true">
+                            <input class="calc-input input-slide input-err" type="text" value="4000 ₽ ">
                             <span class="credit-term">Первоначальный взнос</span>
+                            <div id="slider-range-max2"></div>
+                            <div class="pips">
+                                <div class="pip pip1-1">0%</div>
+                                <div class="pip pip2-2">10%</div>
+                                <div class="pip pip3-3">20%</div>
+                                <div class="pip pip4-4">30%</div>
+                                <div class="pip pip5-5">40%</div>
 
+                            </div>
+                            <div class="err-msg">Превышена допустимая сумма кредитования! </div>
+                            <svg class="ic_err">
+                                <use xlink:href="img/sprite.svg#err"></use>
+                            </svg>
                         </div>
                         <div class="input_title">Контактная информация</div>
                         <div class="input-wrp">
-                            <input class="calc-input" type="text" placeholder="Фамилия">
+                            <input class="calc-input input-err" type="text" placeholder="Фамилия">
+                            <div class="err-msg">Укажите фамилию!</div>
+                            <svg class="ic_err">
+                                <use xlink:href="img/sprite.svg#err"></use>
+                            </svg>
+                        </div>
+                        <div class="input-wrp disabled">
+                            <input class="calc-input" disabled type="text" placeholder="Заблоченный инпут">
 
                         </div>
                         <div class="input-wrp">
-                            <input class="calc-input" type="text" placeholder="Имя">
+                            <input class="calc-input input-err" type="text" placeholder="Отчество">
+                            <div class="err-msg">Укажите отчество (если есть)! </div>
+                            <svg class="ic_err">
+                                <use xlink:href="img/sprite.svg#err"></use>
+                            </svg>
 
                         </div>
                         <div class="input-wrp">
-                            <input class="calc-input" type="text" placeholder="Отчество">
-
-                        </div>
-                        <div class="input-wrp">
-                            <input class="calc-input" type="text" placeholder="Мобильный телефон">
-
+                            <input class="calc-input input-err" type="text" placeholder="Мобильный телефон">
+                            <div class="err-msg">Укажите номер телефона! </div>
+                            <svg class="ic_err">
+                                <use xlink:href="img/sprite.svg#err"></use>
+                            </svg>
                         </div>
 
                         <div class="input_title">Данные заказа</div>
                         <div class="input-wrp">
 
                             <div class="input-wrp">
-                                <input class="calc-input" type="text" placeholder="Номер заказа">
-
+                                <input class="calc-input input-err" type="text" placeholder="Номер заказа">
+                                <div class="err-msg">Укажите номер заказа!</div>
+                                <svg class="ic_err">
+                                    <use xlink:href="img/sprite.svg#err"></use>
+                                </svg>
                             </div>
                             <div class="input-wrp">
-                                <input class="calc-input" type="text" placeholder="Модель заказа">
-
+                                <input class="calc-input input-err" type="text" placeholder="Модель заказа">
+                                <div class="err-msg">Укажите модель заказа!</div>
+                                <svg class="ic_err">
+                                    <use xlink:href="img/sprite.svg#err"></use>
+                                </svg>
                             </div>
 
                         </div>
@@ -164,7 +202,7 @@
                             Тарифы и условия
                         </a>
                     </div>
-                    <a href="#" class="cresults__btn">Заполнить анкету</a>
+                    <a href="#" class="cresults__btn cresults__btn--disabled">Заполнить анкету</a>
                 </div>
             </div>
         </div>
@@ -180,6 +218,3 @@
     <script src="js/main.js"></script>
 
 </body>
-
-
-</html>

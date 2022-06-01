@@ -426,6 +426,14 @@
   margin-bottom: 7px;
   position: relative;
 }
+.input-wrp .input-product-title {
+  font: 14px Roboto, sans-serif;
+  line-height: normal;
+  line-height: normal;
+  color: #66788f;
+  margin-bottom: 10px;
+  display: block;
+}
 
 .input-wrp--slider {
   margin-bottom: 50px;
@@ -536,6 +544,10 @@
   width: 24px;
   height: 24px;
   fill: #cc003d;
+}
+
+.ic_err-top48 {
+  top: 48px;
 }
 
 .disabled {
