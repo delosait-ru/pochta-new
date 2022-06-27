@@ -145,7 +145,7 @@
   background: #fff;
   padding: 30px;
   border: 2px solid #ebeef5;
-  margin-top: 100px;
+  margin-top: 8px;
   position: relative;
   z-index: 50;
   width: 100%;
@@ -563,6 +563,7 @@
   box-shadow: none;
   cursor: pointer;
   margin-top: -4px;
+  margin-bottom: 35px;
 }
 
 .ui-slider-handle {
@@ -587,9 +588,7 @@
 .pips {
   width: 100%;
   position: relative;
-  margin-top: 9px;
   display: block;
-  margin-bottom: 35px;
   z-index: 60;
 }
 .pips .pip {
@@ -598,6 +597,7 @@
   color: #66788f;
   white-space: nowrap;
   transform: translateX(-20px);
+  margin-top: 14px;
 }
 .pips .pip::before {
   content: "";
@@ -607,6 +607,7 @@
   height: 5px;
   background: #a1acba;
   left: 50%;
+  cursor: pointer;
 }
 
 .pip1 {
