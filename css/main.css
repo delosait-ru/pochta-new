@@ -852,7 +852,10 @@
   background: #3F47CC;
   border-radius: 4px;
   transition: all 0.3s;
+<<<<<<< HEAD
   text-decoration: none;
+=======
+>>>>>>> fa02dd5c14bdabab8b681d5999e9a7924c1e2a7b
 }
 .btn-fiolett:hover {
   background: #535ad1;
@@ -910,8 +913,11 @@
 }
 .approve__descr p {
   padding: 3px 0;
+<<<<<<< HEAD
   margin: 0;
   line-height: 1;
+=======
+>>>>>>> fa02dd5c14bdabab8b681d5999e9a7924c1e2a7b
 }
 .approve__rectangle {
   width: 30px;
