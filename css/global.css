@@ -206,4 +206,9 @@ a {
   text-decoration: none;
   transition: all 0.3s;
 }
+
+.container {
+  position: relative;
+  z-index: 10;
+}
 /*# sourceMappingURL=global.css.map */
